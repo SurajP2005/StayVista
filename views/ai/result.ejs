@@ -1,0 +1,59 @@
+
+<% layout("/layouts/boilerplate") %>
+
+<style>
+.trip-plan{
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.trip-plan h1,
+.trip-plan h2,
+.trip-plan h3{
+    margin-top:1.5rem;
+    color:#fe424d;
+}
+
+.trip-plan ul{
+    padding-left:1.5rem;
+}
+
+.trip-plan table{
+    width:100%;
+    border-collapse:collapse;
+    margin:1rem 0;
+}
+
+.trip-plan table,
+.trip-plan th,
+.trip-plan td{
+    border:1px solid #ddd;
+}
+
+.trip-plan th,
+.trip-plan td{
+    padding:10px;
+}
+</style>
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="mb-4 text-center">
+            ✨ Your AI Trip Plan
+        </h2>
+
+        <div class="trip-plan">
+            <%- tripPlan %>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/trip-planner" class="btn btn-danger">
+                Plan Another Trip
+            </a>
+        </div>
+
+    </div>
+
+</div>
