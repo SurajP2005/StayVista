@@ -102,7 +102,7 @@ If no StayVista listing is available, clearly say:
 `;
 
     const response = await ai.models.generateContent({
-        model: "gemini-3.8-flash",
+    model: "gemini-3.5-flash-lite",
         contents: prompt,
     });
 
